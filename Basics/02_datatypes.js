@@ -44,7 +44,7 @@ const totalRunTournaments = 5451112154858n // BigInt
 // Arrays, Objects, Funtions 
 
 
-const players = ["Virat", "Joy", "Kane"]
+// const players = ["Virat", "Joy", "Kane"]
 
 const myFnction = function(){
     console.log("Hello");
@@ -60,3 +60,45 @@ console.log(typeof capNo);
 
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+// * * * *  Memory  * * * * 
+
+// Stack (Primitive Datatypes), Heap (Non-primitive datatypes)
+
+// let topOdiBatsman = "Virat kohli"
+
+// let recentBatsman = topOdiBatsman;
+// recentBatsman = "Shubhman Gill"
+
+// console.log(topOdiBatsman);
+// console.log(recentBatsman);
+
+
+let players = ["Virat", "Joe", "Kane"]
+let players2 = players;
+
+players2 = ["Shubhman", "Fraser", "Steve"]
+
+// console.log(players);
+// console.log(players2);
+
+let details = {
+    name: "Virat kohli",
+    age: 34,
+    isBatsman: true
+}
+
+let details2 = details;
+details2.name = "Joe Root"
+
+// console.log(details);
+// console.log(details2);
+
+let bowlers = ["Bumrah", "Starc", "Andereson"]
+let bowlers2 = bowlers
+
+bowlers2 = ["Wood", "Boult", "Bhuvneshwar"]
+
+console.log(bowlers)
+console.log(bowlers2)
